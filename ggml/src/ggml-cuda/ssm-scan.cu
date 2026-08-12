@@ -7,8 +7,7 @@
 
 #ifdef USE_CUB
 #ifdef GGML_HIP_USE_HIPCUB_SSM
-#include <hipcub/hipcub.hpp>
-namespace cub = hipcub;
+#include "vendors/hipcub.cuh"
 #else
 #include <cub/cub.cuh>
 #endif  // GGML_HIP_USE_HIPCUB_SSM
