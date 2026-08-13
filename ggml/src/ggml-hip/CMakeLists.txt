@@ -114,6 +114,10 @@ if (GGML_HIP_NO_VMM)
     add_compile_definitions(GGML_HIP_NO_VMM)
 endif()
 
+if (GGML_HIP_NO_HIPCUB)
+    add_compile_definitions(GGML_HIP_NO_HIPCUB)
+endif()
+
 if (NOT GGML_HIP_MMQ_MFMA)
     add_compile_definitions(GGML_HIP_NO_MMQ_MFMA)
 endif()
